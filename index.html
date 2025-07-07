@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TheWigBarPE Store</title>
+
+</head>
+<body>
+    <div class="pageWrapper">
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <img src="/img/WB_20250415_124752_0000.png" width="100" height="100" alt="">
+            </div>
+        
+            <div class="navBottom">
+                <h3 class="menuItem">Bob</h3>
+                <h3 class="menuItem">Body Wave</h3>
+                <h3 class="menuItem">Straight</h3>
+                <h3 class="menuItem">Curls</h3>
+            </div>
+
+            <div class="navItem hidden" id="ordersNav">
+                <span class="orders">Orders</span>
+            </div>
+            
+        </div>
+    </nav>
+ <div id="mainContent">
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem" style="background-image: url('/img/Bob.jpg'); background-size: cover; background-position: center;">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">The Bob</h1>
+                <h2 class="sliderDes">Turn heads with our Bouncy & Full Bob Collection — where volume meets attitude. Designed for effortless movement and sleek shape, these bobs bring the perfect blend of playful bounce and polished edge. Flirty, fierce, and full of life — just like you.</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem" style="background-image: url('/img/body wave.jpg'); background-size: cover; background-position: center;">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">The Body Wave</h1>
+                <h2 class="sliderDes">Graceful, flowing, unforgettable. Our Body Wave Collection brings soft waves with natural movement and a touch of glam. Perfectly sculpted to frame, flatter, and flow — these waves are made to stand out with effortless charm.</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem" style="background-image: url('/img/Straight.jpg'); background-size: cover; background-position: center;">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">The Straight</h1>
+                <h2 class="sliderDes">Powerfully smooth and endlessly refined. The Straight Collection is all about sleek lines and clean finishes, giving you a polished look that moves with confidence. Bold in its simplicity — and anything but basic.</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem" style="background-image: url('/img/curly.jpg'); background-size: cover; background-position: center;">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">The Curls</h1>
+                <h2 class="sliderDes">Big texture, bigger energy. The Curly Collection is full of defined curls and bold volume, made to celebrate every coil and curve. Spirited, dynamic, and unapologetically you.</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img class="featureIcon" src="/img/7340518_e-commerce_online_shopping_ui_shipping_icon.png" alt=""></img>
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDes">Free nationwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="/img/2075811_arrival_calendar_date_return_icon.png" alt=""></img>
+            <span class="featureTitle">14 DAYS EXCHANGE</span>
+            <span class="featureDes">No question exchange in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="/img/9960980_email_arrow_chat_communication_send_icon.png" alt=""></img>
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDes">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <div class="product" id="productSection">
+        <img class="productImg" src="/img/Bob.jpg" alt="">
+        <div class="productDetails">
+            <p class="productDetail">Super Double Drawn Bob Wigs</p>
+            <p class="productPrice">R 2,000.00 ZAR</p>
+            <p class="productShipping">Tax included. Free shipping.</p>
+        </div>
+        <div class="closureChoice">Closure</div>
+        <div class="closures">
+            <div class="closure">5x5</div>
+            <div class="closure">13x4</div>
+            <div class="closure">13x6</div>
+        </div>
+        <div class="inchesChoice">Inches</div>
+        <div class="Inches">
+            <div class="inch">8"</div>
+            <div class="inch">12"</div>
+            <div class="inch">14"</div>
+        </div>
+        <div class="productQuantity">Quantity</div>
+        <div class="quantitySelector">
+             <button class="qtyBtn" id="decreaseQty">−</button>
+             <input type="number" id="quantity" value="1" min="1" readonly>
+             <button class="qtyBtn" id="increaseQty">+</button>
+         </div>
+
+        <button class="productButton">BUY NOW!</button>
+        <h2 class="productTotal">Total R 2,000.00 ZAR</h2>
+
+        <div class="gallery">
+            <div class="galleryItem">
+                <img src="./img/Straight.jpg" alt="" class="galleryImg">
+            </div>
+            <div class="galleryItem">
+                <img src="./img/curly.jpg" alt="" class="galleryImg">
+            </div>
+            <div class="galleryItem">
+                <img src="./img/body wave.jpg" alt="" class="galleryImg">
+            </div>
+        </div>
+        <h2 class="busDescription">
+            <em>Where wig woes end</em> — that’s not just our slogan, it’s our promise.
+        </h2>
+    </div>
+
+    <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="John Doe" class="payInput">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+27 12 345 6789" class="payInput">
+        <label>Address</label>
+        <input type="text" placeholder="1 Nowhere street, Somewhere" class="payInput">
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+            <img src="./img/294654_visa_icon.png" alt="" class="cardIcon" width="40">
+            <img src="./img/1156750_finance_mastercard_payment_icon.png" alt="" class="cardIcon" width="40">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+            <input type="text" placeholder="mm" class="payInput sm">
+            <input type="text" placeholder="yyyy" class="payInput sm">
+            <input type="text" placeholder="cvv" class="payInput sm">
+        </div>
+        <button class="payButton">Checkout!</button>
+        <span class="close">X</span>
+    </div>
+ </div>
+
+    <div id="faqPage" style="display: none;">
+            <h1 class="FAQTitle">Frequently Asked Questions</h1>
+        
+            <h2 id="delivery">How long does delivery take?</h2>
+            <p>Delivery takes between 4-12 days</p>
+        
+            <h2 id="preorder">Can I pre-order my wig?</h2>
+            <p>Pre-orders are not allowed</p>
+        
+            <h2 id="refunds">Are refunds & exchanges allowed?</h2>
+            <p>Refunds are not allowed, we can only exchange within 14 days after you have received the hair</p>
+        
+            <h2 id="humanhair">Is the hair 100% human hair?</h2>
+            <p>Yes, we sell 100% Peruvian human hair</p>
+        
+            <h2 id="customized">Does the hair come customized?</h2>
+            <p>Yes, the hair comes fully customized (bleached and plucked)</p>
+
+            <button onclick="goBackHome()">Back to Store</button>
+
+            <p></p>
+    </div>
+    
+        <footer>
+            <div class="footerLeft">
+                <div class="footerMenu">
+                    <h1 class="fMenuTitle">Contact Us</h1>
+                    <ul class="fMenuList">
+                        <li class="RListItem">Email: Info@thewigbarpe.co.za</li>
+                        <li class="RListItem">Whatsapp or Call: 0780772629</li>
+                    </ul>
+                </div>
+
+                <div class="footerMenu">
+                    <h1 class="fMenuTitle">Frequently Asked Questions</h1>
+                    <ul class="fMenuList">
+                        <li class="fListItem"><a data-target="delivery">How long does delivery take?</a></li>
+                        <li class="fListItem"><a data-target="preorder">Can I pre-order my wig?</a></li>
+                        <li class="fListItem"><a data-target="refunds">Are refunds & exchanges allowed?</a></li>
+                        <li class="fListItem"><a data-target="humanhair">Is the hair 100% human hair?</a></li>
+                        <li class="fListItem"><a data-target="customized">Does the hair come customized?</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footerRight">
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                    <div class="fMail">
+                        <input type="text" placeholder="your@email.com" class="fInput">
+                        <button class="fButton">Join!</button>
+                    </div>
+                </div>
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Follow Us</h1>
+                    <div class="fIcons">
+                      <a href="https://www.instagram.com/thewigbarpe" target="_blank" rel="noopener noreferrer">
+                         <img src="/img/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram" class="fIcon">
+                     </a>
+                     <a href="https://www.tiktok.com/@thewigbarpe" target="_blank" rel="noopener noreferrer">
+                         <img src="/img/9112359_tiktok_video_talk_camera_play_icon.png" alt="TikTok" class="fIcon">
+                     </a>
+                    </div>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright">@Liya Dev. All rights reserved. 2025.</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>

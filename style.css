@@ -1,0 +1,559 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.orders{
+    font-size: 20px;
+    border-bottom: 2px solid burlywood;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.slider{
+   /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 94%); */
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 400vw;
+    transition: all 1s ease-in-out
+}
+
+.sliderItem{
+    width: 100vw;
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right:25%;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
+
+.sliderDes{
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+.buyButton{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-weight: 800;
+    border: 1px solid black;
+}
+
+.buyButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 20px;
+    margin: 20px;
+}
+
+.featureDes{
+    color: gray;
+    width: 200px;
+    height: 100px;
+}
+
+.product{
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    
+}
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.73);
+-webkit-box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.73);
+}
+
+.payTitle{
+    font-size: 20px;
+    color: rgb(201, 200, 200);
+}
+
+.label{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput{
+    padding: 1px;
+    margin: 10px 1px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder{
+    color: rgb(163, 163, 163);
+}
+
+.cardIcons{
+    display: flex;
+}
+
+.cardIcon{
+    margin-right: 10px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 30;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -0;
+    width: 600px;
+    left: 0;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.productImg{
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0% 4% 0% 4%);
+}
+
+.productDetail {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 40px; /* Adjust this value for the space you want before the price */
+}
+
+.productPrice {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 5px;
+}
+
+.productShipping{
+    margin-top: 0;
+    font-size: 10px;
+    font-weight: 5px;
+    color: gray;
+}
+
+.closures,
+.inches {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 16px; /* Space after group */
+}
+
+.closure,
+.inch {
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 50px; /* Makes them pill/circle shaped */
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    min-width: 40px;
+}
+
+/* Optional: Add hover or selected styles */
+.closure:hover,
+.inch:hover {
+    background-color: black;
+    color: white;
+}
+
+.closureChoice,
+.inchesChoice{
+    color: gray;
+    font-size: 10;
+    margin-bottom: 8px;
+}
+
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.qtyBtn {
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quantity {
+    border: none;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    outline: none;
+}
+
+.productQuantity {
+    color: gray;
+    font-size: 10;
+    margin-bottom: 8px;
+}
+
+.productButton {
+    width: 1000px; /* Adjust to your needs */
+    padding: 15px;
+    border-color: white;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    display: block;
+    margin: 8 auto; /* centers it */
+    transition: 0.3s ease;
+}
+
+.gallery {
+    padding: 0;
+    display: flex;
+}
+
+.galleryItem {
+    flex: 1;
+}
+
+.galleryImg {
+    width: 100%;
+}
+
+.busDescription {
+    max-width: 800px;              
+    margin: 40px auto;             
+    padding: 0 20px;               
+    text-align: center;          
+    font-weight: 500;             
+    font-size: 1.2rem;            
+    color: #333;                  
+    line-height: 1.6;             
+}
+
+.footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle {
+    font-size: 16px;
+    color: white;
+}
+
+.fMenuList {
+    padding: 0;
+    list-style: none;
+}
+
+.fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.RListItem {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fInput{
+    padding: 5px;
+}
+
+.fButton {
+    padding: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.fIcons{
+    display: flex;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainContent,
+#faqPage {
+    flex: 1;
+    display: block;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    background-color: black;
+}
+
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .navBottom{
+        flex-wrap: wrap;
+    }
+
+    .menuItem{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .slider{
+        clip-path: none;
+    }
+    .sliderImg{
+        width: 90%;
+    }
+
+    .sliderBg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sliderDes{
+        display: none;
+    }
+
+    .sliderTitle{
+        top: unset;
+        bottom: -10;
+        left: 0;
+    }
+
+    .buyButton{
+        right: -40px;
+        top: unset;
+        bottom: 10px;
+        color: white;
+        background-color: black;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    /*.product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }*/
+
+    .productButton{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft{
+        padding: 20px;
+        width: 90%;
+    }
+
+    .footerRight{
+        padding: 20px;
+        width: 90%;
+        align-items: center;
+        background-color: black;
+    }
+
+    .payment{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .payButton{
+        width: 100%;
+    }
+    .busDescription{
+        display: none;
+    }
+}
+
+
+  
+
+
+
+
+
+
+
+
