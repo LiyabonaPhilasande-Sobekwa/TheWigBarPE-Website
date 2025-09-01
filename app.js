@@ -187,41 +187,6 @@ document.querySelectorAll('.buyButton').forEach(button => {
   });
 });
 
-    function handleLogin() {
-        // Simulate login process (replace this with real logic)
-        const userIsLoggedIn = true;
-
-        if (userIsLoggedIn) {
-            document.getElementById("ordersNav").classList.remove("hidden");
-
-            // Optionally, change login button to "Logout"
-           const loginBtn = document.querySelector(".signupLogin");
-            loginBtn.textContent = "Logout";
-            loginBtn.onclick = handleLogout;
-        }
-    }
-
-    function handleLogout() {
-        // Simulate logout
-        document.getElementById("ordersNav").classList.add("hidden");
-
-        const loginBtn = document.querySelector(".signupLogin");
-        loginBtn.textContent = "Login/Signup";
-        loginBtn.onclick = handleLogin;
-    }
-
-    window.onload = () => {
-      const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-  
-      if (isLoggedIn) {
-          document.getElementById("ordersNav").classList.remove("hidden");
-          document.getElementById("loginNav").classList.add("hidden");
-      } else {
-          document.getElementById("ordersNav").classList.add("hidden");
-          document.getElementById("loginNav").classList.remove("hidden"); // 👈 this shows it
-      }
-  };
-  
 
 // Handle footer FAQ links
 document.querySelectorAll('.fListItem a').forEach(link => {
